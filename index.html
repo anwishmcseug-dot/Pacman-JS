@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAC-MAN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pacman.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="hud">
+            <div id="score-display">SCORE: <span id="score">0</span></div>
+            <div id="lives-display">LIVES: <span id="lives-icons"></span></div>
+            <div id="level-display">LEVEL: <span id="level">1</span></div>
+        </div>
+        <canvas id="board"></canvas>
+        <div id="message-overlay" class="hidden">
+            <div id="message-text"></div>
+            <div id="message-sub"></div>
+        </div>
+        <div id="controls-hint">
+            ← ↑ ↓ → &nbsp; or &nbsp; W A S D &nbsp; to move
+        </div>
+    </div>
+    <script src="pacman.js"></script>
+</body>
+</html>
